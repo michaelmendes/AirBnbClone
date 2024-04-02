@@ -21,6 +21,15 @@ export class NavMenu extends Component {
     });
   }
 
+    render() {
+        return (
+            <nav>
+                <img src="airbnb-logo.png" />
+            </nav>
+        )
+    }
+
+  /*
   render() {
     return (
       <header>
@@ -43,5 +52,6 @@ export class NavMenu extends Component {
         </Navbar>
       </header>
     );
-  }
+    }
+  */
 }

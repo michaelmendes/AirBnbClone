@@ -13,3 +13,26 @@ code {
   border-color: #1861ac;
 }
 
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--photo {
+    max-inline-size: 500px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero--header {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.hero--text {
+    margin-top: 0;
+}
