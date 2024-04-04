@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './NavMenu.css';
+import logo from "../assets/airbnb-logo.png"
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
@@ -24,7 +25,7 @@ export class NavMenu extends Component {
     render() {
         return (
             <nav>
-                <img src="airbnb-logo.png" />
+            <img src={logo} />
             </nav>
         )
     }

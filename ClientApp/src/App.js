@@ -12,12 +12,8 @@ import './custom.css';
 const cards = data.map(pic => {
   return (
     <Card
-      img={pic.coverImg}
-      rating={pic.stats.rating}
-      reviewCount={pic.stats.reviewCount}
-      location={pic.location}
-      title={pic.title}
-      price={pic.price}
+      key={pic.id}
+      item={pic}
     />
   )
 })
@@ -30,7 +26,9 @@ export default class App extends Component {
       <div>
         <NavMenu />
         <Hero />
-        {cards}
+        <section className="cards-list">
+          {cards}
+        </section>
       </div>
     );
   }
